@@ -1,0 +1,48 @@
+package com.appleyk.DM17_责任链.DM17.query;
+
+import com.appleyk.DM17_责任链.DM17.AbstractHandler;
+import com.appleyk.DM17_责任链.DM17.filter.ComputerFilter;
+import com.appleyk.DM17_责任链.DM17.model.Computer;
+import com.appleyk.DM17_责任链.DM17.model.KeyBord;
+import com.appleyk.DM17_责任链.DM17.model.Monitor;
+import com.appleyk.DM17_责任链.DM17.model.Mouse;
+import com.appleyk.DM17_责任链.Handler.ComputerHandler;
+import com.appleyk.DM17_责任链.Handler.KeyBordHandler;
+import com.appleyk.DM17_责任链.Handler.MonitorHandler;
+import com.appleyk.DM17_责任链.Handler.MouseHandler;
+import com.appleyk.utils.IdsMaker;
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+
+/**
+ * <p>使用了任务链的service业务层，实现根据过滤器查询电脑信息</p>
+ *
+ * @Author Appleyk
+ * @Blob https://blog.csdn.net/appleyk
+ * @Date Created on 上午 11:41 2018-11-7
+ * @Version V.1.0.1
+ */
+@Service
+public class ComputerQueryService2 {
+
+    public List<Computer> query(ComputerFilter filter){
+
+        // 逐个创建任务
+        ComputerHandler computerHandler = new ComputerHandler();
+        MonitorHandler  monitorHandler  = new MonitorHandler() ;
+        KeyBordHandler  keyBordHandler  = new KeyBordHandler() ;
+        MouseHandler    mouseHandler    = new MouseHandler();
+
+        // 设置任务之间的关系 == 设置任务之间的链条
+        computerHandler.setNextHandler(monitorHandler);
+        monitorHandler.setNextHandler(keyBordHandler);
+        keyBordHandler.setNextHandler(mouseHandler);
+
+        //执行任务链，从第一个任务事件开始执行，最终执行完拿到结果
+        List<Computer> computers = (List<Computer>) AbstractHandler.process(computerHandler, filter);
+        return computers;
+    }
+}
