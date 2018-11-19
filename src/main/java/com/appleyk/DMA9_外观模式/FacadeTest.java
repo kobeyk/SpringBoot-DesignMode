@@ -1,12 +1,12 @@
 package com.appleyk.DMA9_外观模式;
 
-import com.appleyk.DMA9_外观模式.DMA9.FacadeAB;
-import com.appleyk.DMA9_外观模式.DMA9.ModuleA.FacadeA;
-import com.appleyk.DMA9_外观模式.DMA9.ModuleA.SubSystemA;
-import com.appleyk.DMA9_外观模式.DMA9.ModuleA.SubSystemB;
-import com.appleyk.DMA9_外观模式.DMA9.ModuleB.FacadeB;
-import com.appleyk.DMA9_外观模式.DMA9.ModuleB.SubSystemC;
-import com.appleyk.DMA9_外观模式.DMA9.ModuleB.SubSystemD;
+import com.appleyk.DMA9_外观模式.DM9.FacadeAB;
+import com.appleyk.DMA9_外观模式.DM9.ModuleA.FacadeA;
+import com.appleyk.DMA9_外观模式.DM9.ModuleA.SubSystemA;
+import com.appleyk.DMA9_外观模式.DM9.ModuleA.SubSystemB;
+import com.appleyk.DMA9_外观模式.DM9.ModuleB.FacadeB;
+import com.appleyk.DMA9_外观模式.DM9.ModuleB.SubSystemC;
+import com.appleyk.DMA9_外观模式.DM9.ModuleB.SubSystemD;
 
 /**
  * <p>外观模式测试</p>
