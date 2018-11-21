@@ -25,6 +25,12 @@ public class BridgeTest {
     public static void main(String[] args) {
         driverConnect();
         drawShape();
+
+        /**
+         * 1、分离抽象接口及其实现部分。提高了比继承更好的解决方案
+         * 2、桥接模式提高了系统的可扩充性，在两个变化维度中任意扩展一个维度，都不需要修改原有系统
+         * 3、对客户隐藏实现细节
+         */
     }
 
     /**
@@ -71,10 +77,4 @@ public class BridgeTest {
         circle.setColor(white);
         circle.draw();
     }
-
-    /**
-     * 1、分离抽象接口及其实现部分。提高了比继承更好的解决方案
-     * 2、桥接模式提高了系统的可扩充性，在两个变化维度中任意扩展一个维度，都不需要修改原有系统
-     * 3、实现细节对客户透明
-     */
 }
