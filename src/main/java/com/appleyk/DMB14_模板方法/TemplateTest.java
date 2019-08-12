@@ -1,8 +1,9 @@
 package com.appleyk.DMB14_模板方法;
 
+import com.appleyk.DMB14_模板方法.DM14.JDBC模板And回调实现.GoodsQueryServiceImpl;
 import com.appleyk.DMB14_模板方法.DM14.JDBC模板And回调实现.UserQueryServiceImpl;
 import com.appleyk.DMB14_模板方法.DM14.JDBC模板方法实现.AbstractJdbcTemplate;
-import com.appleyk.DMB14_模板方法.DM14.JDBC模板方法实现.AddressTemplateImpl;
+import com.appleyk.DMB14_模板方法.DM14.JDBC模板方法实现.GoodsTemplateImpl;
 import com.appleyk.DMB14_模板方法.DM14.JDBC模板方法实现.UserTemplateImpl;
 import com.appleyk.DMB14_模板方法.DM14.父类固定算法步骤.AbstractCalculator;
 import com.appleyk.DMB14_模板方法.DM14.父类固定算法步骤.Plus;
@@ -41,22 +42,22 @@ public class TemplateTest {
     private static void jdbc() throws SQLException {
 
         System.out.println("====================== 用户数据层操作实现 ");
-        AbstractJdbcTemplate templateUser = new UserTemplateImpl();
-        templateUser.execute("select * from user ");
-        System.out.println("====================== 地址数据层操作实现 ");
-        AbstractJdbcTemplate templateAddress = new AddressTemplateImpl();
-        templateAddress.execute("select * from address ");
+        AbstractJdbcTemplate userTemplate = new UserTemplateImpl();
+        userTemplate.execute("select * from user ");
+        System.out.println("====================== 商品数据层操作实现 ");
+        AbstractJdbcTemplate goodsTemplate = new GoodsTemplateImpl();
+        goodsTemplate.execute("select * from goods ");
 
     }
 
     private static void jdbcCallBack() throws SQLException {
 
-        System.out.println("====================== 用户数据层操作实现（回调） ");
+        System.out.println("====================== 用户数据层操作实现（模板+回调） ");
         UserQueryServiceImpl queryService = new UserQueryServiceImpl();
         queryService.query("select * from user ");
-//        System.out.println("====================== 地址数据层操作实现 ");
-//        AbstractJdbcTemplate templateAddress = new AddressTemplateImpl();
-//        templateAddress.execute("select * from address ");
+        System.out.println("====================== 商品数据层操作实现（模板+回调）");
+        GoodsQueryServiceImpl goodsQueryService = new GoodsQueryServiceImpl();
+        goodsQueryService.query("select * from goods ");
 
     }
 
