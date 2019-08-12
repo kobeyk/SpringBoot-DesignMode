@@ -24,6 +24,6 @@ public class FacadeA {
      */
     public void initialize(){
         subSystemA.initSystem();
-        subSystemB.loadDasta();
+        subSystemB.loadDatas();
     }
 }

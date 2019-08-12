@@ -10,7 +10,7 @@ package com.appleyk.DMA9_外观模式.DM9.ModuleA;
  */
 public class SubSystemB {
 
-    public void loadDasta(){
+    public void loadDatas(){
         System.out.println("人工智能系统已经启动，正在加载数据 =====>"+this);
         System.out.println(".........");
         System.out.println("数据已完成加载");

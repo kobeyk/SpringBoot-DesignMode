@@ -57,7 +57,7 @@ public class FacadeTest {
         SubSystemA subSystemA = new SubSystemA();
         SubSystemB subSystemB = new SubSystemB();
         subSystemA.initSystem();
-        subSystemB.loadDasta();
+        subSystemB.loadDatas();
     }
 
     /**
