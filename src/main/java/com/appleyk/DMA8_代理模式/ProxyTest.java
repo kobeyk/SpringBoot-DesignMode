@@ -17,12 +17,18 @@ import com.appleyk.DMA8_代理模式.DM8.service.impl.UserImpl;
 public class ProxyTest {
 
 	public static void main(String[] args){
+
 		String uName = "奥利奥饼干";
 		String dName = "狗粮";
-		noProxy(uName);	
+		// 1、不使用代理
+		noProxy(uName);
+		// 2、使用静态代理
 		useStaticProxy(uName,dName);
+		// 3、使用动态代理
 		useDynamicProxy(uName, dName);
-		int second = 5; 
+
+		int second = 5;
+		// 4、使用虚拟代理
 		useVirtualProxy(second);
 		
 		/**
