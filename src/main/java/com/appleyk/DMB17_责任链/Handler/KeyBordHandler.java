@@ -10,10 +10,10 @@ import com.appleyk.DMB17_责任链.DM17.model.KeyBord;
 /**
  * <p>键盘处理事件</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 下午 1:26 2018-11-7
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 下午 1:26 2018-11-7
+ * @version V.0.1.1
  */
 public class KeyBordHandler extends AbstractHandler<List<Computer>,ComputerFilter> {
 

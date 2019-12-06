@@ -8,10 +8,10 @@ import com.appleyk.DMA2_抽象工厂.Factory.LianXiang02Factory;
 /**
  * <p>抽象工厂测试 == 具体工厂类实现不同电脑组件的生产</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 上午 11:25 2018-11-6
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 上午 11:25 2018-11-6
+ * @version V.0.1.1
  */
 public class AFactoryTest {
 

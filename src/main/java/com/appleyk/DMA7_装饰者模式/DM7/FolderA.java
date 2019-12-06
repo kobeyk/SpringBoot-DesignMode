@@ -3,10 +3,10 @@ package com.appleyk.DMA7_装饰者模式.DM7;
 /**
  * <p>文件夹A</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 2018年11月10日 - 下午4:15:39
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 2018年11月10日 - 下午4:15:39
+ * @version V.0.1.1
  */
 public class FolderA implements Folder{
 

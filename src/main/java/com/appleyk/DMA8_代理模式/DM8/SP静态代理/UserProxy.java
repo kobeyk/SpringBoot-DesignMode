@@ -6,10 +6,10 @@ import com.appleyk.DMA8_代理模式.DM8.service.impl.UserImpl;
 /**
  * <p>用户代理类 == 静态代理模式，被代理的对象在编译时就知道了</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 2018年11月10日 - 下午5:27:46
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 2018年11月10日 - 下午5:27:46
+ * @version V.0.1.1
  */
 public class UserProxy implements CommodityService{
 	

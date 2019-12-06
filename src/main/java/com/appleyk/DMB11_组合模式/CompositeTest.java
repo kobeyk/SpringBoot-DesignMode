@@ -10,10 +10,10 @@ import com.appleyk.DMB11_组合模式.DM11.login.LoginDiagram;
  * 用来表示部分以及整体层次。这种类型的设计模式属于结构型模式，它创建了对象组的树形结构。
  * 这种模式创建了一个包含自己对象组的类。该类提供了修改相同对象组的方式。
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 下午 1:05 2018-11-21
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 下午 1:05 2018-11-21
+ * @version V.0.1.1
  */
 public class CompositeTest {
 

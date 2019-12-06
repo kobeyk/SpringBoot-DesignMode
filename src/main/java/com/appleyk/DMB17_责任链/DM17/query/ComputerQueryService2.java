@@ -15,10 +15,10 @@ import com.appleyk.DMB17_责任链.Handler.MouseHandler;
 /**
  * <p>使用了任务链的service业务层，实现根据过滤器查询电脑信息</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 上午 11:41 2018-11-7
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 上午 11:41 2018-11-7
+ * @version V.0.1.1
  */
 @Service
 public class ComputerQueryService2 {

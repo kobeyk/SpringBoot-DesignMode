@@ -7,10 +7,10 @@ import com.appleyk.DMA5_建造者模式.DM5.CakeSeller;
 /**
  * <p>建造者模式测试 == 客户购买蛋糕</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 下午 1:32 2018-11-9
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 下午 1:32 2018-11-9
+ * @version V.0.1.1
  */
 public class BuilderTest {
 

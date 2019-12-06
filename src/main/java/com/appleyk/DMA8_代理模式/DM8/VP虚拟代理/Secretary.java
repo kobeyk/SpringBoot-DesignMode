@@ -6,10 +6,10 @@ import java.util.List;
 /**
  * <p>领导身边的秘书 == 将领导作为被代理的对象，但是会延缓被代理对象的创建时间，最后实现签订接口</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 2018年11月10日 - 下午8:54:45
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 2018年11月10日 - 下午8:54:45
+ * @version V.0.1.1
  */
 public class Secretary implements Signable{
 

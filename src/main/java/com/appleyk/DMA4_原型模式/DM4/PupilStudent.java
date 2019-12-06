@@ -5,10 +5,10 @@ import java.io.Serializable;
 /**
  * <p>小学生 == 如果要实现对象的深度拷贝，嵌套引用类型的对象类必须也实现Serializable接口</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 下午 1:14 2018-11-8
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 下午 1:14 2018-11-8
+ * @version V.0.1.1
  */
 public class PupilStudent implements Serializable {
     

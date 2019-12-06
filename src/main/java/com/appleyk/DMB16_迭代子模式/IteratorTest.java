@@ -7,10 +7,10 @@ import com.appleyk.DMB16_迭代子模式.DM16.MyCollection;
 /**
  * <p>迭代子模式测试 == 典型的类似集合的方式实现了我们自己的迭代器,通过迭代器实现元素的遍历</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 下午 1:05 2018-11-21
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 下午 1:05 2018-11-21
+ * @version V.0.1.1
  */
 public class IteratorTest {
 

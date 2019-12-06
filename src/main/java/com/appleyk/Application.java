@@ -9,8 +9,8 @@ import org.springframework.context.annotation.Bean;
 
 /**
  * @Description
- * @Author 苏州中科蓝迪公司所有(c)2016-2021
- * @Date Appleyk Created on 上午 8:36 2018-11-6
+ * @author 苏州中科蓝迪公司所有(c)2016-2021
+ * @date Appleyk Created on 上午 8:36 2018-11-6
  */
 @SpringBootApplication
 public class Application extends SpringBootServletInitializer {

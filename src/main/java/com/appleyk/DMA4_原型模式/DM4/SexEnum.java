@@ -6,10 +6,10 @@ import com.fasterxml.jackson.annotation.JsonValue;
 /**
  * <p>性别枚举类</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 下午 1:16 2018-11-8
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 下午 1:16 2018-11-8
+ * @version V.0.1.1
  */
 public enum SexEnum {
 

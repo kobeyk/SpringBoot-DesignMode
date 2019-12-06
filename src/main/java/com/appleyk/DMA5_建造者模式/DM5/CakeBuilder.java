@@ -4,10 +4,10 @@ package com.appleyk.DMA5_建造者模式.DM5;
  * <p>蛋糕制作器接口，规定制作流程，具体实现过程取决于builder的人</p>
  * <p>除了定义制作流程【工序】外，还需要定义一个根据流程制作好的蛋糕【获取产品】</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 下午 1:36 2018-11-9
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 下午 1:36 2018-11-9
+ * @version V.0.1.1
  */
 public interface CakeBuilder {
 

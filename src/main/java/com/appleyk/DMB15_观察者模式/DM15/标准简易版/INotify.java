@@ -3,10 +3,10 @@ package com.appleyk.DMB15_观察者模式.DM15.标准简易版;
 /**
  * <p>通知接口，主要干的事情，就是添加、移除观察者、以及通知所有观察者，我XXX干了什么</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 下午 1:05 2018-11-21
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 下午 1:05 2018-11-21
+ * @version V.0.1.1
  */
 public interface INotify {
 

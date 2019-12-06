@@ -3,10 +3,10 @@ package com.appleyk.DMA5_建造者模式.DM5;
 /**
  * <p>蛋糕师 == 根据builder定义的制作工序制作蛋糕</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 下午 1:53 2018-11-9
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 下午 1:53 2018-11-9
+ * @version V.0.1.1
  */
 public class CakeMaker implements  CakeBuilder{
 

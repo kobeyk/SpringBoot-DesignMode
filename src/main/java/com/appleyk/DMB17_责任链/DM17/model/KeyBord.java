@@ -3,10 +3,10 @@ package com.appleyk.DMB17_责任链.DM17.model;
 /**
  * <p>键盘</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 下午 2:02 2018-11-6
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 下午 2:02 2018-11-6
+ * @version V.0.1.1
  */
 public class KeyBord extends AbstractObject{
 

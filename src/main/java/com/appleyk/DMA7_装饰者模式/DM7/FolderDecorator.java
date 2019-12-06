@@ -4,10 +4,10 @@ package com.appleyk.DMA7_装饰者模式.DM7;
  * <p>文件夹装饰类</p>
  * <p>扩展文件夹创建和删除的类 == 在创建和删除前后进行相应的操作</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 2018年11月10日 - 下午4:18:36
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 2018年11月10日 - 下午4:18:36
+ * @version V.0.1.1
  */
 public class FolderDecorator implements Folder{
 

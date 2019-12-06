@@ -7,10 +7,10 @@ import com.appleyk.DMA6_适配器模式.DM6.Player;
  * <p>抽象类中的方法：无需全部实现</p>
  * <p>接口中的方法    ：必须全部实现</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 2018年11月10日 - 下午1:17:34
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 2018年11月10日 - 下午1:17:34
+ * @version V.0.1.1
  */
 public abstract class AbstractPlayer implements Player{
 	

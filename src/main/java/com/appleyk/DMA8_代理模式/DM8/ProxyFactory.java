@@ -11,10 +11,10 @@ import com.appleyk.DMA8_代理模式.DM8.service.CommodityService;
 /**
  * <p>代理类工厂</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 2018年11月10日 - 下午7:04:23
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 2018年11月10日 - 下午7:04:23
+ * @version V.0.1.1
  */
 public class ProxyFactory {
 

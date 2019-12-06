@@ -12,10 +12,10 @@ import com.appleyk.DMB13_策略模式.DM13.商场打折.Shuang11;
 /**
  * <p>策略模式测试</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 下午 1:05 2018-11-21
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 下午 1:05 2018-11-21
+ * @version V.0.1.1
  */
 public class StrategyTest {
 

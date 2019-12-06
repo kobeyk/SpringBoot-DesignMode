@@ -12,10 +12,10 @@ import com.appleyk.DMA6_适配器模式.DM6.OAdapter对象.BaoFengPlayer;
 /**
  * <p>适配器模式测试 </p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 上午 2018年11月10日11:08:26
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 上午 2018年11月10日11:08:26
+ * @version V.0.1.1
  */
 public class AdapterTest {
 

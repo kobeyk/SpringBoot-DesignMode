@@ -9,10 +9,10 @@ import java.util.Date;
 /**
  * <p>小学生的家庭作业</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 下午 12:59 2018-11-8
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 下午 12:59 2018-11-8
+ * @version V.0.1.1
  */
 public class HomeWork implements  Cloneable,Serializable {
 

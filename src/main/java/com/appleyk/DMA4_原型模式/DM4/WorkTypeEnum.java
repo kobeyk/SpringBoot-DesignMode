@@ -6,10 +6,10 @@ import com.fasterxml.jackson.annotation.JsonValue;
 /**
  * <p>作业枚举类</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 下午 1:01 2018-11-8
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 下午 1:01 2018-11-8
+ * @version V.0.1.1
  */
 public enum WorkTypeEnum {
 

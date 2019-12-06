@@ -3,10 +3,10 @@ package com.appleyk.DMA3_单例模式.DM3;
 /**
  * <p>单例模式 -- 线程安全，只在第一次创建实例的时候加锁</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 下午 1:12 2018-11-6
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 下午 1:12 2018-11-6
+ * @version V.0.1.1
  */
 public class Singleton3 {
 

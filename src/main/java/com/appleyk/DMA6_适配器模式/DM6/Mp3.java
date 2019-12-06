@@ -3,10 +3,10 @@ package com.appleyk.DMA6_适配器模式.DM6;
 /**
  * <p>MP3播放器  == 功能单一，只播放歌曲</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 2018年11月10日 - 上午11:48:48
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 2018年11月10日 - 上午11:48:48
+ * @version V.0.1.1
  */
 public class Mp3 {
 

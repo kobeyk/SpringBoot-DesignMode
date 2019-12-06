@@ -3,10 +3,10 @@ package com.appleyk.DMB16_迭代子模式.DM16;
 /**
  * <p>自定义集合类，实现聚集抽象类中的迭代器的创建方法</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 下午 1:05 2018-11-21
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 下午 1:05 2018-11-21
+ * @version V.0.1.1
  */
 public class MyCollection extends AbstractAggregate{
 

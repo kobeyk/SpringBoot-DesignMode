@@ -3,10 +3,10 @@ package com.appleyk.DMA9_外观模式.DM9.ModuleB;
 /**
  * <p>外观模式B == 聚合子模块B中的子系统C和D，降低客户端操作子模块B的复杂度</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 上午 9:13 2018-11-12
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 上午 9:13 2018-11-12
+ * @version V.0.1.1
  */
 public class FacadeB {
 

@@ -11,10 +11,10 @@ import com.appleyk.DMA9_外观模式.DM9.ModuleB.SubSystemD;
 /**
  * <p>外观模式测试</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 上午 8:30 2018-11-12
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 上午 8:30 2018-11-12
+ * @version V.0.1.1
  */
 public class FacadeTest {
     public static void main(String[] args) {

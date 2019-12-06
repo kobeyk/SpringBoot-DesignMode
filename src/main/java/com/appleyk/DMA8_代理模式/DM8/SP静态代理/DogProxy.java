@@ -6,10 +6,10 @@ import com.appleyk.DMA8_代理模式.DM8.service.impl.DogImpl;
 /**
  * <p>宠物狗代理类 == 静态代理模式</p>
  *
- * @Author Appleyk
- * @Blob https://blog.csdn.net/appleyk
- * @Date Created on 2018年11月10日 - 下午8:25:51
- * @Version V.1.0.1
+ * @author Appleyk
+ * @blob https://blog.csdn.net/appleyk
+ * @date Created on 2018年11月10日 - 下午8:25:51
+ * @version V.0.1.1
  */
 public class DogProxy implements CommodityService{
 
