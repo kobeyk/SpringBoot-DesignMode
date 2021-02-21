@@ -16,7 +16,6 @@ public class CsdnSystem extends AbstractSubscription {
     private String content ;
 
     public CsdnSystem(){
-
     }
 
     public CsdnSystem(String content){
@@ -32,7 +31,4 @@ public class CsdnSystem extends AbstractSubscription {
         notifyRssers(content);
     }
 
-    public void setContent(String content) {
-        this.content = content;
-    }
 }

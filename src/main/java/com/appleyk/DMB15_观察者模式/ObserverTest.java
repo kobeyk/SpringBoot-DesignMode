@@ -43,10 +43,12 @@ public class ObserverTest {
         csdnSystem.add(new RssUser(10001L,"曹操"));
         csdnSystem.add(new RssUser(10002L,"刘备"));
         csdnSystem.add(new RssUser(10003L,"孙权"));
+        // 发布消息
         csdnSystem.publish();
 
         System.out.println("=========================此时，曹操退出了群聊");
         csdnSystem.remove(10001L);
+        // 再次发布消息
         csdnSystem.publish();
 
     }

@@ -11,7 +11,8 @@ package com.appleyk.DMB15_观察者模式.DM15.RSS消息订阅;
 public interface IRss {
 
     /**
-     * <p>消息订阅，主要输出订阅的内容</p>
+     * 消息订阅，主要输出订阅的内容
+     * @param content 消息内容
      */
     void rss(String content);
 

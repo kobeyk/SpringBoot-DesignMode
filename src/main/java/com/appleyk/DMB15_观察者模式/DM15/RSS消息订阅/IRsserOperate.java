@@ -1,7 +1,7 @@
 package com.appleyk.DMB15_观察者模式.DM15.RSS消息订阅;
 
 /**
- * <p>订阅者操作接口</p>
+ * <p>消息订阅者操作接口</p>
  *
  * @author Appleyk
  * @blob https://blog.csdn.net/appleyk

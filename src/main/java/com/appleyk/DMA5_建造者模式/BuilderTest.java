@@ -25,9 +25,8 @@ public class BuilderTest {
      * 接下来，我们来实现一下
      */
     public static void main(String[] args) {
-        /**
-         * 先指定一个蛋糕师傅  == 李师傅
-         */
+
+        // 先指定一个蛋糕师傅  == 李师傅
         CakeMaker cakeMaker = new CakeMaker("李师傅");
 
         /**
@@ -39,6 +38,7 @@ public class BuilderTest {
          * 销售员卖个客户一个蛋糕 == 注意，这个蛋糕的制作工程已经被隐藏了
          */
         Cake cake = cakeSeller.sell(cakeMaker);
+
         /**
          * 这一句其实没必要显示，这里显示是为了说明，蛋糕不是平白无故的创造出来的
          */
@@ -55,9 +55,5 @@ public class BuilderTest {
          */
 
     }
-
-
-
-
 
 }

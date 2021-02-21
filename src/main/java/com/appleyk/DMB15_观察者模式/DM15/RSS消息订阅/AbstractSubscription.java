@@ -15,7 +15,7 @@ import java.util.List;
 public abstract class AbstractSubscription implements IRsserOperate{
 
     /**
-     * 存放订阅了消息的用户
+     * 存放不同的消息订阅对象（一个消息订阅对象对应一个消息消费者）
      */
     private List<IRss> rsses = new ArrayList<>();
 
@@ -29,6 +29,10 @@ public abstract class AbstractSubscription implements IRsserOperate{
         this.rsses.remove(rss);
     }
 
+    /**
+     * 移除消息订阅方
+     * @param rssId 消息订阅消费者ID
+     */
     @Override
     public void remove(Long rssId) {
         Iterator<IRss> iterator = rsses.iterator();
@@ -41,9 +45,14 @@ public abstract class AbstractSubscription implements IRsserOperate{
         }
     }
 
+    /**
+     * 将消息通知到所有的订阅者
+     * @param content 消息内容
+     */
     @Override
     public void notifyRssers(String content) {
         for (IRss rss : rsses) {
+            // 循环调用
             rss.rss(content);
         }
     }

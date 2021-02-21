@@ -8,8 +8,7 @@ package com.appleyk.DMA5_建造者模式.DM5;
  * @date Created on 下午 1:53 2018-11-9
  * @version V.0.1.1
  */
-public class CakeMaker implements  CakeBuilder{
-
+public class CakeMaker implements CakeBuilder{
 
     /**
      * 蛋糕师傅的姓名
@@ -28,8 +27,6 @@ public class CakeMaker implements  CakeBuilder{
     public  CakeMaker(String name){
         this.name = name;
     }
-    
-    
     
     /**
 	 * @return the name

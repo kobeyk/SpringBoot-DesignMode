@@ -25,8 +25,8 @@ public abstract class AbstractHandler <TData,TFilter>{
 
     /**
      * 抽象过滤器方法 == 具体实现交由具体的任务类执行，参数是具体的查询过滤器
-     * @param filter
-     * @return
+     * @param filter 过滤器对象
+     * @return TData
      */
     public abstract TData filter(TFilter filter);
 
@@ -46,7 +46,7 @@ public abstract class AbstractHandler <TData,TFilter>{
         this.nextHandler = nextHandler;
     }
 
-    public  static <TFilter>  Object process(AbstractHandler handler , TFilter filter){
+    public  static <TFilter> Object process(AbstractHandler handler , TFilter filter){
 
         AbstractHandler nextHandler   = handler;
         Object data = handler.getData();
