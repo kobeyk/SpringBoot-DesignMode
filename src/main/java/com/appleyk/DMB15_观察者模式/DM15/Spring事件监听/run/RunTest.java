@@ -1,8 +1,8 @@
-package com.appleyk.DMB15_观察者模式.DM15.Spring事务监听.run;
+package com.appleyk.DMB15_观察者模式.DM15.Spring事件监听.run;
 
-import com.appleyk.DMB15_观察者模式.DM15.Spring事务监听.config.SConfig;
-import com.appleyk.DMB15_观察者模式.DM15.Spring事务监听.event.TestEvent;
-import com.appleyk.DMB15_观察者模式.DM15.Spring事务监听.listener.TestEventListener1;
+import com.appleyk.DMB15_观察者模式.DM15.Spring事件监听.config.SConfig;
+import com.appleyk.DMB15_观察者模式.DM15.Spring事件监听.event.TestEvent;
+import com.appleyk.DMB15_观察者模式.DM15.Spring事件监听.listener.TestEventListener1;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

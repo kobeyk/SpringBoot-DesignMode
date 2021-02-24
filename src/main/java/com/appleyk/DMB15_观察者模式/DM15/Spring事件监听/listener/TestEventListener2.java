@@ -1,6 +1,6 @@
-package com.appleyk.DMB15_观察者模式.DM15.Spring事务监听.listener;
+package com.appleyk.DMB15_观察者模式.DM15.Spring事件监听.listener;
 
-import com.appleyk.DMB15_观察者模式.DM15.Spring事务监听.event.TestEvent;
+import com.appleyk.DMB15_观察者模式.DM15.Spring事件监听.event.TestEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
