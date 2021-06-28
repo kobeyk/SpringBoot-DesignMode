@@ -11,7 +11,7 @@ import java.util.Date;
  * 这里需要注意一下：基于Spring事件进行扩展，其事件源即Spring IOC容器 也称Spring上下文
  *
  * @author appleyk
- * @version V.0.1.1
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @github https://github.com/kobeyk
  * @date created on 12:20 2021/2/21

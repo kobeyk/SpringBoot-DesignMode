@@ -8,13 +8,13 @@ import java.sql.Statement;
  * <p>数据库操作模板类</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:05 2018-11-21
- * @version V.0.1.1
  */
 public class JdbcTemplate {
 
-    public final Object execute(StatementCallback callback) throws SQLException {
+    public final Object execute(IStatementCallback callback) throws SQLException {
 
         // 1、首先获取数据库连接对象
         Connection connection = getConnection();
@@ -26,17 +26,17 @@ public class JdbcTemplate {
         // 资源的释放这里我就省略了
     }
 
-    private Connection getConnection(){
+    private Connection getConnection() {
         System.out.println("获取数据库连接");
         return null;
     }
 
-    private Statement getStament(Connection connection){
+    private Statement getStament(Connection connection) {
         System.out.println("获取数据库操作对象");
         return null;
     }
 
-    public Object executeQuery(StatementCallback callback) throws SQLException{
+    public Object executeQuery(IStatementCallback callback) throws SQLException {
         return execute(callback);
     }
 

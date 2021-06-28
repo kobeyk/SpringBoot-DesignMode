@@ -11,17 +11,17 @@ import com.appleyk.DMB17_责任链.DM17.model.Mouse;
  * <p>鼠标处理事件</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:26 2018-11-7
- * @version V.0.1.1
  */
-public class MouseHandler extends AbstractHandler<List<Computer>,ComputerFilter> {
+public class MouseHandler extends AbstractHandler<List<Computer>, ComputerFilter> {
 
     @Override
     public List<Computer> filter(ComputerFilter filter) {
         List<Computer> computers = this.getData();
         Boolean loadMouse = filter.getLoadMouse();
-        if(loadMouse){
+        if (loadMouse) {
             for (Computer computer : computers) {
                 Mouse mouse = new Mouse();
                 mouse.setId(idsMaker.nextId());
@@ -29,6 +29,6 @@ public class MouseHandler extends AbstractHandler<List<Computer>,ComputerFilter>
                 computer.setMouse(mouse);
             }
         }
-        return  computers;
+        return computers;
     }
 }

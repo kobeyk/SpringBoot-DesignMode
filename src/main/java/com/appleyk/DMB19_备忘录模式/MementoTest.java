@@ -12,9 +12,9 @@ import java.util.List;
  * <p>备忘录测试</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:05 2018-11-21
- * @version V.0.1.1
  */
 public class MementoTest {
 
@@ -28,19 +28,19 @@ public class MementoTest {
 
     }
 
-    private static void memento(){
+    private static void memento() {
 
         Original original = new Original("明天周一，我们去吃火锅吧！");
 
         // 1、为了记住明天事情，我需要将这条信息记录下来
         Storage storage = new Storage(original.createMemento());
 
-        System.out.println("主意没变前："+original.getValue());
+        System.out.println("主意没变前：" + original.getValue());
 
         // 2、明天，我又想吃北京烤鸭了
         original.setValue("明天周一，我们还是去吃北京烤鸭吧！");
 
-        System.out.println("主意改变后："+original.getValue());
+        System.out.println("主意改变后：" + original.getValue());
 
         /**
          * 3、后来想了想，我还是不吃北京烤鸭了，这个太油腻了
@@ -50,11 +50,11 @@ public class MementoTest {
         original.restoreMemento(storage.getMemento());
 
         // 4、通过翻看之前记录在备忘录里面的内容，我发现明天我是要吃火锅的
-        System.out.println("主意反悔后："+original.getValue());
+        System.out.println("主意反悔后：" + original.getValue());
 
     }
 
-    private static void transition(){
+    private static void transition() {
 
         // 初始化三条数据
         List<Integer> data = new ArrayList<>();
@@ -66,28 +66,28 @@ public class MementoTest {
 
         // 1、添加一个元素，添加前，先备份下
         TransitionStorage storage = new TransitionStorage(originData.createJournal());
-        printLog("增加一个数据前",originData);
+        printLog("增加一个数据前", originData);
         originData.addData(4);
         // 2、添加一个元素后，再备份下
         storage.backup(originData.createJournal());
-        printLog("增加一个数据后",originData);
+        printLog("增加一个数据后", originData);
 
         // 3、删除一个元素前
         originData.remove(2);
         // 4、删除一个元素后，备份下
         storage.backup(originData.createJournal());
-        printLog("删除一个数据后",originData);
+        printLog("删除一个数据后", originData);
 
         /**
          * 5、现在有了两次操作，一次增加，一次删除，现在我们要恢复到删除前的数据
          *    即回滚事务日志ID = 2的记录
          */
         originData.restoreJournal(storage.getLogMap(2));
-        printLog("根据事物日志id=2,恢复数据后",originData);
+        printLog("根据事物日志id=2,恢复数据后", originData);
     }
 
-    private static void printLog(String message,OriginData originData){
-        System.out.println(message+originData+"，当前事务日志ID："+originData.getLogNum());
+    private static void printLog(String message, OriginData originData) {
+        System.out.println(message + originData + "，当前事务日志ID：" + originData.getLogNum());
     }
 
     /**

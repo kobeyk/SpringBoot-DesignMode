@@ -11,14 +11,13 @@ import com.appleyk.DMB11_组合模式.DM11.login.LoginDiagram;
  * 这种模式创建了一个包含自己对象组的类。该类提供了修改相同对象组的方式。
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:05 2018-11-21
- * @version V.0.1.1
  */
 public class CompositeTest {
 
-
-    public static void paintDiagram(){
+    public static void paintDiagram() {
         System.out.println("============开始============");
         System.out.println("           /    \\");
         System.out.println("        登录   退出");
@@ -30,7 +29,6 @@ public class CompositeTest {
     }
 
     public static void main(String[] args) {
-
         // 登录流程图
         paintDiagram();
 
@@ -40,7 +38,7 @@ public class CompositeTest {
 
         // 添加一级子节点
         TreeNode loginNode = root.addChildren("登录");
-        TreeNode exitNode  = root.addChildren("退出");
+        TreeNode exitNode = root.addChildren("退出");
 
         // 添加二级子节点
         TreeNode homeNode = loginNode.addChildren("首页");

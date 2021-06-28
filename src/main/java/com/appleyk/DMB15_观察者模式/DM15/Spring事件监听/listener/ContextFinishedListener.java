@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  * <p>Spring上下文完成刷新（配置、加载bean定义、创建bean实例等等）监听器</p>
  *
  * @author appleyk
- * @version V.0.1.1
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @github https://github.com/kobeyk
  * @date created on 13:05 2021/2/21

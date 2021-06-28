@@ -4,7 +4,7 @@ package com.appleyk.DMB15_观察者模式.DM15.任务回调函数;
  * <p>具体的数据传输任务</p>
  *
  * @author appleyk
- * @version V.0.1.1
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @github https://github.com/kobeyk
  * @date created on 10:56 2021/2/21

@@ -4,13 +4,13 @@ package com.appleyk.DMB20_状态模式.DM20.自行车加速减速.bike;
  * <p>一挡</p>
  *
  * @author appleyk
- * @version V.1.0.1
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date created on 2019/12/6 10:18 PM
  */
 public class FirstGear extends AGearState {
 
-    public FirstGear(Bike bike){
+    public FirstGear(Bike bike) {
         super(bike);
     }
 

@@ -4,11 +4,11 @@ package com.appleyk.DMB17_责任链.DM17.model;
  * <p>抽象对象类</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:57 2018-11-6
- * @version V.0.1.1
  */
-public abstract  class AbstractObject {
+public abstract class AbstractObject {
 
     private Long id;
     private String name;

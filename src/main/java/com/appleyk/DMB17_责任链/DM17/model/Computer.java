@@ -6,7 +6,7 @@ package com.appleyk.DMB17_责任链.DM17.model;
  * @author Appleyk
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:59 2018-11-6
- * @version V.0.1.1
+ * @version v0.1.1
  */
 public class Computer extends AbstractObject{
 

@@ -8,9 +8,9 @@ import com.appleyk.DMB16_迭代子模式.DM16.MyCollection;
  * <p>迭代子模式测试 == 典型的类似集合的方式实现了我们自己的迭代器,通过迭代器实现元素的遍历</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:05 2018-11-21
- * @version V.0.1.1
  */
 public class IteratorTest {
 
@@ -18,26 +18,26 @@ public class IteratorTest {
         myIterator();
     }
 
-    private static void myIterator(){
+    private static void myIterator() {
 
-        Integer[] numArr = new Integer[]{1,2,3};
+        Integer[] numArr = new Integer[]{1, 2, 3};
         AbstractAggregate aggregate = new MyCollection(numArr);
         IIterator iterator = aggregate.createIterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
 
         System.out.println("==============若想要迭代器继续迭代输出元素");
-        System.out.println("first = " +iterator.first());
+        System.out.println("first = " + iterator.first());
         System.out.println("==============我们可以调用first方法重置pos");
 
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
 
         System.out.println("==============我们再来创建一个迭代器对象出来");
         IIterator iteratorOther = aggregate.createIterator();
-        while (iteratorOther.hasNext()){
+        while (iteratorOther.hasNext()) {
             System.out.println(iteratorOther.next());
         }
 

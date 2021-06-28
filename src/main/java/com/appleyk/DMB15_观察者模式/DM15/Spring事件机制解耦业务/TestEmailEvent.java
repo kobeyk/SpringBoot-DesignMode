@@ -8,7 +8,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class TestEmailEvent {
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(EmailConfig.class);
         UserService userService = context.getBean(UserService.class);
         TUser user = TUser.builder()

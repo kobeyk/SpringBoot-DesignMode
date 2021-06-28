@@ -6,7 +6,7 @@ package com.appleyk.DMA3_单例模式.DM3;
  * @author Appleyk
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:12 2018-11-6
- * @version V.0.1.1
+ * @version v0.1.1
  */
 public class Singleton3 {
 
@@ -32,6 +32,5 @@ public class Singleton3 {
     public void show(){
         System.out.println("你好，我是单例模式三！");
     }
-
 
 }

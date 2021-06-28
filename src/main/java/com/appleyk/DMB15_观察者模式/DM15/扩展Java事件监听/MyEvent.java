@@ -6,7 +6,7 @@ import java.util.EventObject;
  * <p>自定义事件</p>
  *
  * @author appleyk
- * @version V.0.1.1
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @github https://github.com/kobeyk
  * @date created on 11:48 2021/2/21

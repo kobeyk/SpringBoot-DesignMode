@@ -7,9 +7,9 @@ package com.appleyk.DMA5_建造者模式.DM5;
  * @author Appleyk
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:36 2018-11-9
- * @version V.0.1.1
+ * @version v0.1.1
  */
-public interface CakeBuilder {
+public interface ICakeBuilder {
 
     /**
      * 揉面

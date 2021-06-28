@@ -13,9 +13,9 @@ import com.appleyk.DMB13_策略模式.DM13.商场打折.Shuang11;
  * <p>策略模式测试</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:05 2018-11-21
- * @version V.0.1.1
  */
 public class StrategyTest {
 
@@ -32,61 +32,61 @@ public class StrategyTest {
         shuang11();
     }
 
-    private static void plus(){
+    private static void plus() {
         System.out.println("===============2+ 8 乘法运算");
         ICalculator calculator = new Plus();
         double calculate = calculator.calculate("2+ 8");
-        System.out.println("2+ 8 = "+calculate);
+        System.out.println("2+ 8 = " + calculate);
     }
 
-    private static void sub(){
+    private static void sub() {
         System.out.println("===============2 - 8 减法运算");
         ICalculator calculator = new Sub();
         double calculate = calculator.calculate("2 - 8");
-        System.out.println("2 - 8 = "+calculate);
+        System.out.println("2 - 8 = " + calculate);
     }
 
-    private static void mul(){
+    private static void mul() {
         System.out.println("===============2*8 乘法运算");
         ICalculator calculator = new Mul();
         double calculate = calculator.calculate("2*8");
-        System.out.println("2*8 = "+calculate);
+        System.out.println("2*8 = " + calculate);
     }
 
-    private static void man300jian100(){
+    private static void man300jian100() {
 
         System.out.println("===============全场满300减100！");
         double totalPrice = 450.0;
-        System.out.println("商品原价："+totalPrice+"￥");
+        System.out.println("商品原价：" + totalPrice + "￥");
         PriceContext price = new PriceContext(new Man300Jian100());
-        System.out.println("商品折后的价钱："+price.discount(totalPrice)+"￥");
+        System.out.println("商品折后的价钱：" + price.discount(totalPrice) + "￥");
 
     }
 
-    private static void dianShang618(){
+    private static void dianShang618() {
 
         System.out.println("===============电商节6.18欢快购！");
         double totalPrice = 700.0;
-        System.out.println("商品原价："+totalPrice+"￥");
+        System.out.println("商品原价：" + totalPrice + "￥");
         PriceContext price = new PriceContext(new DianShang618());
-        System.out.println("商品折后的价钱："+price.discount(totalPrice)+"￥");
+        System.out.println("商品折后的价钱：" + price.discount(totalPrice) + "￥");
 
         totalPrice = 1024.0;
-        System.out.println("商品原价："+totalPrice+"￥");
-        System.out.println("商品折后的价钱："+price.discount(totalPrice)+"￥");
+        System.out.println("商品原价：" + totalPrice + "￥");
+        System.out.println("商品折后的价钱：" + price.discount(totalPrice) + "￥");
     }
 
-    private static void shuang11(){
+    private static void shuang11() {
 
         System.out.println("===============双11全场嗨翻购！");
         double totalPrice = 623.0;
-        System.out.println("商品原价："+totalPrice+"￥");
+        System.out.println("商品原价：" + totalPrice + "￥");
         PriceContext price = new PriceContext(new Shuang11());
-        System.out.println("商品折后的价钱："+price.discount(totalPrice)+"￥");
+        System.out.println("商品折后的价钱：" + price.discount(totalPrice) + "￥");
 
         totalPrice = 1500.0;
-        System.out.println("商品原价："+totalPrice+"￥");
-        System.out.println("商品折后的价钱："+price.discount(totalPrice)+"￥");
+        System.out.println("商品原价：" + totalPrice + "￥");
+        System.out.println("商品折后的价钱：" + price.discount(totalPrice) + "￥");
     }
 
 

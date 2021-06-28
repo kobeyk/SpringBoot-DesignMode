@@ -1,13 +1,13 @@
 package com.appleyk.DMA6_适配器模式;
 
 import com.appleyk.DMA6_适配器模式.DM6.Mp3;
-import com.appleyk.DMA6_适配器模式.DM6.Player;
-import com.appleyk.DMA6_适配器模式.DM6.CAdapter类.QQPlayer;
-import com.appleyk.DMA6_适配器模式.DM6.IAdapter接口.APlayer;
-import com.appleyk.DMA6_适配器模式.DM6.IAdapter接口.AbstractPlayer;
-import com.appleyk.DMA6_适配器模式.DM6.IAdapter接口.BPlayer;
-import com.appleyk.DMA6_适配器模式.DM6.IAdapter接口.CPlayer;
-import com.appleyk.DMA6_适配器模式.DM6.OAdapter对象.BaoFengPlayer;
+import com.appleyk.DMA6_适配器模式.DM6.IPlayer;
+import com.appleyk.DMA6_适配器模式.DM6.类适配器.QQPlayer;
+import com.appleyk.DMA6_适配器模式.DM6.接口适配器.APlayer;
+import com.appleyk.DMA6_适配器模式.DM6.接口适配器.AbstractPlayer;
+import com.appleyk.DMA6_适配器模式.DM6.接口适配器.BPlayer;
+import com.appleyk.DMA6_适配器模式.DM6.接口适配器.CPlayer;
+import com.appleyk.DMA6_适配器模式.DM6.对象适配器.BaoFengPlayer;
 
 /**
  * <p>适配器模式测试 </p>
@@ -15,7 +15,7 @@ import com.appleyk.DMA6_适配器模式.DM6.OAdapter对象.BaoFengPlayer;
  * @author Appleyk
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 上午 2018年11月10日11:08:26
- * @version V.0.1.1
+ * @version v0.1.1
  */
 public class AdapterTest {
 
@@ -46,7 +46,7 @@ public class AdapterTest {
 		 *         这时候就需要借助抽象类Ab了，Ab实现接口I，抽象类和接口的区别就是，抽象类中的方法无需都实现，
 		 *         而接口中的方法必须全部实现，这样一来，我们适配的类就可以通过只继承Ab类来实现接口I中的部分功能了
 		 *         
-		 *       项目中，具体用到哪种模式的适配器，可以好好斟酌一下了
+		 * 项目中，具体用到哪种模式的适配器，可以好好斟酌一下了，其实我在项目中用到最多的是接口适配器模式
 		 *   
 		 */
 		
@@ -54,7 +54,7 @@ public class AdapterTest {
 
 	private static void useAdapterOfClass() {
 		// 类适配器模式测试 == 持有类Mp3的原始方法，但是不能创建该类的实例
-		Player qqPlayer = new QQPlayer();
+		IPlayer qqPlayer = new QQPlayer();
 		qqPlayer.playMusics();
 		qqPlayer.playMVs();
 		qqPlayer.playMovies();	
@@ -64,7 +64,7 @@ public class AdapterTest {
 	private static void useAdapterOfObject() {
 		// 对象适配器模式测试 == 持有类Mp3的原始方法，但是可以创建不同的Mp3类的实例
 		Mp3 sonyMp3 = new Mp3("索尼（SONY） NW-ZX300A");
-		Player bfPlayer = new BaoFengPlayer(sonyMp3);
+		IPlayer bfPlayer = new BaoFengPlayer(sonyMp3);
 		bfPlayer.playMusics();
 		bfPlayer.playMVs();
 		bfPlayer.playMovies();		

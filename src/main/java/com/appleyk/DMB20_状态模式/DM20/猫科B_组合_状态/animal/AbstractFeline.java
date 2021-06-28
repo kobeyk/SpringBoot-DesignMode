@@ -7,7 +7,7 @@ import com.appleyk.DMB20_状态模式.DM20.猫科B_组合_状态.behavior.ISwimB
  * <p>抽象一个猫科动物的类</p>
  *
  * @author appleyk
- * @version V.0.1.1
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date created on 13:43 2019/12/6
  */

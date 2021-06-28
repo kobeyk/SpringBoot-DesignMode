@@ -8,11 +8,11 @@ import java.util.List;
  * <p>抽象一个订阅类，实现rss操作</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:05 2018-11-21
- * @version V.0.1.1
  */
-public abstract class AbstractSubscription implements IRsserOperate{
+public abstract class AbstractSubscription implements IRsserOperate {
 
     /**
      * 存放不同的消息订阅对象（一个消息订阅对象对应一个消息消费者）
@@ -31,14 +31,15 @@ public abstract class AbstractSubscription implements IRsserOperate{
 
     /**
      * 移除消息订阅方
+     *
      * @param rssId 消息订阅消费者ID
      */
     @Override
     public void remove(Long rssId) {
         Iterator<IRss> iterator = rsses.iterator();
-        while (iterator.hasNext()){
-            RssUser next = (RssUser)iterator.next();
-            if(rssId.equals(next.getId())){
+        while (iterator.hasNext()) {
+            RssUser next = (RssUser) iterator.next();
+            if (rssId.equals(next.getId())) {
                 iterator.remove();
                 break;
             }
@@ -47,6 +48,7 @@ public abstract class AbstractSubscription implements IRsserOperate{
 
     /**
      * 将消息通知到所有的订阅者
+     *
      * @param content 消息内容
      */
     @Override

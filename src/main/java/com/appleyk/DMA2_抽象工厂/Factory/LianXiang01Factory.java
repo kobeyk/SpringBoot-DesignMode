@@ -1,8 +1,8 @@
 package com.appleyk.DMA2_抽象工厂.Factory;
 
-import com.appleyk.DMA2_抽象工厂.DM2.AComputerFactory;
-import com.appleyk.DMA2_抽象工厂.DM2.ProduceKeyBord;
-import com.appleyk.DMA2_抽象工厂.DM2.ProduceMouse;
+import com.appleyk.DMA2_抽象工厂.DM2.IComputerFactory;
+import com.appleyk.DMA2_抽象工厂.DM2.IProduceKeyBord;
+import com.appleyk.DMA2_抽象工厂.DM2.IProduceMouse;
 import com.appleyk.DMA2_抽象工厂.KeyBoard.LeiBoKeyBord;
 import com.appleyk.DMA2_抽象工厂.Mouse.LeiBoMouse;
 
@@ -12,19 +12,19 @@ import com.appleyk.DMA2_抽象工厂.Mouse.LeiBoMouse;
  * @author Appleyk
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 上午 11:47 2018-11-6
- * @version V.0.1.1
+ * @version v0.1.1
  */
-public class LianXiang01Factory implements AComputerFactory {
+public class LianXiang01Factory implements IComputerFactory {
 
 
     @Override
-    public ProduceKeyBord createKeyBord() {
+    public IProduceKeyBord createKeyBord() {
         // 使用雷柏的键盘
         return new LeiBoKeyBord();
     }
 
     @Override
-    public ProduceMouse createMouse() {
+    public IProduceMouse createMouse() {
         // 使用雷柏的鼠标
         return new LeiBoMouse();
     }

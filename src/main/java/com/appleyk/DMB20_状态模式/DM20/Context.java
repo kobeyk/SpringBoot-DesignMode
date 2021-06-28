@@ -4,13 +4,15 @@ package com.appleyk.DMB20_状态模式.DM20;
  * <p>环境类</p>
  *
  * @author appleyk
- * @version V.1.0.1
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date created on 2019/12/6 10:59 PM
  */
 public class Context {
 
-    /**持有一个状态*/
+    /**
+     * 持有一个状态
+     */
     private AState state;
 
     public Context() {
@@ -18,7 +20,7 @@ public class Context {
         this.state = new ConcreteStateA();
     }
 
-    public void handle(){
+    public void handle() {
         state.handle(this);
     }
 

@@ -4,7 +4,7 @@ package com.appleyk.DMB15_观察者模式.DM15.扩展Java事件监听;
  * <p>自定义事件监听实现类</p>
  *
  * @author appleyk
- * @version V.0.1.1
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @github https://github.com/kobeyk
  * @date created on 12:03 2021/2/21

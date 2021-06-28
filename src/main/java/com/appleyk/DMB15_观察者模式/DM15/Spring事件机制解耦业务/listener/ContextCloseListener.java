@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  * <p>Spring上下文Close监听器</p>
  *
  * @author appleyk
- * @version V.0.1.1
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @github https://github.com/kobeyk
  * @date created on 14:48 2021/2/21

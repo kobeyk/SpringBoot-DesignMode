@@ -11,11 +11,11 @@ import com.appleyk.DMA3_单例模式.DM3.Singleton4;
  * @author Appleyk
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:09 2018-11-6
- * @version V.0.1.1
+ * @version v0.1.1
  */
 public class SingletonTest {
 
-    // 快捷键 -- psvm
+    // 快捷键 -- psvm or main
     public static void main(String[] args) {
 
         // 1、单例模式 -- 非线程安全

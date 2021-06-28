@@ -8,41 +8,28 @@ import java.io.Serializable;
  * @author Appleyk
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:14 2018-11-8
- * @version V.0.1.1
+ * @version v0.1.1
  */
 public class PupilStudent implements Serializable {
     
 	private static final long serialVersionUID = 1L;
 
-	/**
-     * 学号
-     */
+	/**学号*/
     private Long sNo;
 
-    /**
-     * 年级
-     */
+    /**年级*/
     private Integer sClass;
 
-    /**
-     * 姓名
-     */
+    /**姓名*/
     private String name;
 
-    /**
-     * 年龄
-     */
+    /**年龄*/
     private Integer age;
 
-    /**
-     * 性别
-     */
+    /**性别*/
+    private ESexType sex = ESexType.MALE;
 
-    private SexEnum sex = SexEnum.MALE;
-
-    public  PupilStudent(){
-
-    }
+    public  PupilStudent(){}
 
     public Long getsNo() {
         return sNo;
@@ -76,11 +63,11 @@ public class PupilStudent implements Serializable {
         this.age = age;
     }
 
-    public SexEnum getSex() {
+    public ESexType getSex() {
         return sex;
     }
 
-    public void setSex(SexEnum sex) {
+    public void setSex(ESexType sex) {
         this.sex = sex;
     }
 }

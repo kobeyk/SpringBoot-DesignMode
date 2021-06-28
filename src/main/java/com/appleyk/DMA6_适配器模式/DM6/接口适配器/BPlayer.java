@@ -1,4 +1,4 @@
-package com.appleyk.DMA6_适配器模式.DM6.IAdapter接口;
+package com.appleyk.DMA6_适配器模式.DM6.接口适配器;
 
 /**
  * <p>播放器B  == 只具有播放MV的功能</p>
@@ -6,7 +6,7 @@ package com.appleyk.DMA6_适配器模式.DM6.IAdapter接口;
  * @author Appleyk
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 2018年11月10日 - 下午1:20:15
- * @version V.0.1.1
+ * @version v0.1.1
  */
 public class BPlayer extends AbstractPlayer{
 

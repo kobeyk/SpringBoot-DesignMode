@@ -8,9 +8,9 @@ import com.appleyk.DMB18_命令模式.DM18.传统模式.Receiver;
  * <p>命令模式测试</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:05 2018-11-21
- * @version V.0.1.1
  */
 public class CommandTest {
 
@@ -18,10 +18,10 @@ public class CommandTest {
         command();
     }
 
-    private static void command(){
+    private static void command() {
         Receiver receiver = new Receiver("吕蒙");
         Invoker leader = new Invoker(new ConcreteCommand(receiver,
-                "去，趁关羽攻打许昌，赶紧偷渡长江把荆州给我抢回来！" ));
+                "去，趁关羽攻打许昌，赶紧偷渡长江把荆州给我抢回来！"));
         leader.setName("孙权");
         // 领导发话了
         leader.action();

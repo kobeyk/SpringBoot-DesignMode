@@ -6,7 +6,7 @@ import java.util.Optional;
  * <p>抽象一个可执行的任务类，主要就是把任务执行的方法进行抽取封装（其中用到了模板方法）</p>
  *
  * @author appleyk
- * @version V.0.1.1
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @github https://github.com/kobeyk
  * @date created on 10:44 2021/2/21

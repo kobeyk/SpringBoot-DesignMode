@@ -11,9 +11,6 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author 苏州中科蓝迪
- */
 public class JsonUtils {
 
     /**
@@ -107,6 +104,7 @@ public class JsonUtils {
     }
 
     public static List<String> parseList(String jsonStr) throws IOException {
-        return MAPPER.readValue(jsonStr, new TypeReference<List<String>>() {});
+        return MAPPER.readValue(jsonStr, new TypeReference<List<String>>() {
+        });
     }
 }

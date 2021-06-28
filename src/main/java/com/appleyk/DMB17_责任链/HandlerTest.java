@@ -12,9 +12,9 @@ import java.util.List;
  * <p>责任链测试</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:55 2018-11-6
- * @version V.0.1.1
  */
 public class HandlerTest {
 
@@ -32,7 +32,7 @@ public class HandlerTest {
 
         // 不使用任务链模式进行查询
         noUseHandler(filter);
-        
+
         // 使用任务链模式进行查询
         useHandler(filter);
 
@@ -50,16 +50,16 @@ public class HandlerTest {
 
     }
 
-	private static void useHandler(ComputerFilter filter) {
-		ComputerQueryService2 q2 = new ComputerQueryService2();
+    private static void useHandler(ComputerFilter filter) {
+        ComputerQueryService2 q2 = new ComputerQueryService2();
         List<Computer> computers2 = q2.query(filter);
         System.out.println(JsonUtils.objectToJson(computers2));
-	}
+    }
 
-	private static void noUseHandler(ComputerFilter filter) {
-		ComputerQueryService1 q1 = new ComputerQueryService1();
+    private static void noUseHandler(ComputerFilter filter) {
+        ComputerQueryService1 q1 = new ComputerQueryService1();
         List<Computer> computers1 = q1.query(filter);
         System.out.println(JsonUtils.objectToJson(computers1));
         System.out.println("======================分割线");
-	}
+    }
 }

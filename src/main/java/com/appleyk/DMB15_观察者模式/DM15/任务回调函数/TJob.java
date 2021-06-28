@@ -8,7 +8,7 @@ import lombok.Data;
  * <p>任务对象，为简单起见，就搞几个字段意思下，大家明白就行</p>
  *
  * @author appleyk
- * @version V.0.1.1
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @github https://github.com/kobeyk
  * @date created on 10:36 2021/2/21

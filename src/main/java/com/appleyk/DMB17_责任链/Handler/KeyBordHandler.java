@@ -11,17 +11,17 @@ import com.appleyk.DMB17_责任链.DM17.model.KeyBord;
  * <p>键盘处理事件</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:26 2018-11-7
- * @version V.0.1.1
  */
-public class KeyBordHandler extends AbstractHandler<List<Computer>,ComputerFilter> {
+public class KeyBordHandler extends AbstractHandler<List<Computer>, ComputerFilter> {
 
     @Override
     public List<Computer> filter(ComputerFilter filter) {
         List<Computer> computers = this.getData();
         Boolean loadKeyBord = filter.getLoadKeyBord();
-        if(loadKeyBord){
+        if (loadKeyBord) {
             for (Computer computer : computers) {
                 KeyBord keyBord = new KeyBord("无线");
                 keyBord.setId(idsMaker.nextId());
@@ -29,6 +29,6 @@ public class KeyBordHandler extends AbstractHandler<List<Computer>,ComputerFilte
                 computer.setKeyBord(keyBord);
             }
         }
-        return  computers;
+        return computers;
     }
 }

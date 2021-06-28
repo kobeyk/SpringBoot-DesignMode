@@ -5,7 +5,7 @@
 
     <groupId>com.appleyk</groupId>
     <artifactId>appleyk</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.1.1-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>SpringBoot-Designer</name>
     <description>Java -- 23种设计模式Demo全集</description>

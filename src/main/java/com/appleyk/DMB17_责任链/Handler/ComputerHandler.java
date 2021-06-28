@@ -12,12 +12,11 @@ import com.appleyk.DMB17_责任链.DM17.model.Computer;
  * <p>电脑处理事件</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:26 2018-11-7
- * @version V.0.1.1
  */
-public class ComputerHandler extends AbstractHandler<List<Computer>,ComputerFilter> {
-
+public class ComputerHandler extends AbstractHandler<List<Computer>, ComputerFilter> {
 
     @Override
     public List<Computer> filter(ComputerFilter filter) {
@@ -25,9 +24,9 @@ public class ComputerHandler extends AbstractHandler<List<Computer>,ComputerFilt
         List<Computer> computers = new ArrayList<>();
         HashSet<Long> ids = filter.getIds();
         for (Long id : ids) {
-            Computer computer = new Computer("苹果公司",13488.00);
+            Computer computer = new Computer("苹果公司", 13488.00);
             computer.setId(id);
-            computer.setName("Apple MacBook Pro 13.3英寸笔记本电脑 深空灰色 2018新款 -- "+id);
+            computer.setName("Apple MacBook Pro 13.3英寸笔记本电脑 深空灰色 2018新款 -- " + id);
             computers.add(computer);
         }
         return computers;

@@ -4,9 +4,9 @@ package com.appleyk.DMB17_责任链.DM17.filter;
  * <p></p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 2:11 2018-11-6
- * @version V.0.1.1
  */
 public class ComputerFilter extends AbstractFilter {
 
@@ -25,7 +25,7 @@ public class ComputerFilter extends AbstractFilter {
      */
     private Boolean loadMouse = false;
 
-    public ComputerFilter(){
+    public ComputerFilter() {
 
     }
 

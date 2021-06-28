@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  * <p>自定义测试事件监听器：通过再事件处理方法上加@EventListener的方式实现</p>
  * 注：这种方式会优先被执行
  * @author appleyk
- * @version V.0.1.1
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @github https://github.com/kobeyk
  * @date created on 13:00 2021/2/21

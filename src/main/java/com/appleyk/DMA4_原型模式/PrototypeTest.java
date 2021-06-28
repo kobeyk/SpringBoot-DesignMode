@@ -2,8 +2,8 @@ package com.appleyk.DMA4_原型模式;
 
 import com.appleyk.DMA4_原型模式.DM4.HomeWork;
 import com.appleyk.DMA4_原型模式.DM4.PupilStudent;
-import com.appleyk.DMA4_原型模式.DM4.SexEnum;
-import com.appleyk.DMA4_原型模式.DM4.WorkTypeEnum;
+import com.appleyk.DMA4_原型模式.DM4.ESexType;
+import com.appleyk.DMA4_原型模式.DM4.EWorkType;
 import com.appleyk.utils.DateUtils;
 
 import java.util.Date;
@@ -14,7 +14,7 @@ import java.util.Date;
  * @author Appleyk
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 12:58 2018-11-8
- * @version V.0.1.1
+ * @version v0.1.1
  */
 public class PrototypeTest {
     public static void main(String[] args) throws CloneNotSupportedException{
@@ -22,7 +22,7 @@ public class PrototypeTest {
         // 原型 == 我们创建一个已经由小学生【刘晓然】完成的作业对象
         HomeWork homeWork = new HomeWork();
         // 设置作业信息
-        homeWork.setType(WorkTypeEnum.WULI);
+        homeWork.setType(EWorkType.WU_LI);
         homeWork.setPages(12);
         homeWork.setFinishTime(new Date());
         // 设置小学生信息 == 刘晓然
@@ -30,7 +30,7 @@ public class PrototypeTest {
         pupilStudent.setsNo(1001L);
         pupilStudent.setName("刘晓然");
         pupilStudent.setAge(10);
-        pupilStudent.setSex(SexEnum.FEMALE);
+        pupilStudent.setSex(ESexType.FEMALE);
         pupilStudent.setsClass(4);
         homeWork.setPupilStudent(pupilStudent);
 
@@ -80,7 +80,6 @@ public class PrototypeTest {
          * Appleyk："卧槽，我再也不干这种伤天害理的事情了，我下一次一定要深度抄作业！！！！"
          */
 
-
         /**
          * 更多关于对象克隆的细节，请参考我的博文：https://blog.csdn.net/Appleyk/article/details/82866242
          */
@@ -111,7 +110,7 @@ public class PrototypeTest {
         // 我去，还要改名字，这事我差点忘了
         mySelf.setName("Appleyk");
         // 性别，对，还有性别，这个不能粗心大意，忘改了
-        mySelf.setSex(SexEnum.MALE);
+        mySelf.setSex(ESexType.MALE);
         // OK，一切就绪，改的那叫一个相当顺利啊，哈哈哈哈！ == 满心欢喜交作业咯
         return  myHomeWork;
     }
@@ -136,7 +135,7 @@ public class PrototypeTest {
         PupilStudent mySelf = myHomeWork.getPupilStudent();
         mySelf.setsNo(1003L);
         mySelf.setName("张聪明");
-        mySelf.setSex(SexEnum.MALE);
+        mySelf.setSex(ESexType.MALE);
         return  myHomeWork;
     }
 }

@@ -6,9 +6,9 @@ package com.appleyk.DMA10_桥接模式.DM10.database;
  * @author Appleyk
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 4:39 2018-11-12
- * @version V.0.1.1
+ * @version v0.1.1
  */
-public class PostgreSqlDriver implements Driver {
+public class PostgreSqlDriver implements IDriver {
     @Override
     public void connect() {
         System.out.println("postgresql驱动连接数据库");

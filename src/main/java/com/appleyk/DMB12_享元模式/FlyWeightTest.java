@@ -5,7 +5,7 @@ import com.appleyk.DMB12_享元模式.DM12.MyDbDriver;
 
 /**
  * <p>享元模式测试</p>
- *
+ * <p>
  * 享元模式（Flyweight Pattern）主要用于减少创建对象的数量，以减少内存占用和提高性能。
  * 这种类型的设计模式属于结构型模式，它提供了减少对象数量从而改善应用所需的对象结构的方式。
  * 享元模式尝试重用现有的同类对象，如果未找到匹配的对象，则创建新对象。
@@ -14,9 +14,9 @@ import com.appleyk.DMB12_享元模式.DM12.MyDbDriver;
  * 如果有相同的业务请求，直接返回在内存中已有的对象，避免重新创建。
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:23 2018-11-21
- * @version V.0.1.1
  */
 public class FlyWeightTest {
 
@@ -33,10 +33,9 @@ public class FlyWeightTest {
         System.out.println("================================");
         factory.showConns();
         System.out.println("================================");
-        System.out.println("工厂实例集大小："+factory.size());
+        System.out.println("工厂实例集大小：" + factory.size());
 
     }
-
 
 
 }

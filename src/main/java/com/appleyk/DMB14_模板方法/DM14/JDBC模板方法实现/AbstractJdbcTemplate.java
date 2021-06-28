@@ -9,9 +9,9 @@ import java.sql.Statement;
  * <p>模拟JDB模板类（可以理解为伪代码说明）</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:05 2018-11-21
- * @version V.0.1.1
  */
 public abstract class AbstractJdbcTemplate {
 
@@ -29,23 +29,24 @@ public abstract class AbstractJdbcTemplate {
         // 资源的释放这里我就省略了
     }
 
-    private Connection getConnection(){
+    private Connection getConnection() {
         System.out.println("获取数据库连接");
         return null;
     }
 
-    private Statement getStament(Connection connection){
+    private Statement getStament(Connection connection) {
         System.out.println("获取数据库操作对象");
         return null;
     }
 
-    private ResultSet executeQuery(String sql){
-        System.out.println("执行SQL语句："+sql);
+    private ResultSet executeQuery(String sql) {
+        System.out.println("执行SQL语句：" + sql);
         return null;
     }
 
     /**
      * <p>基于结果集进行定制，由具体的子类实现</p>
+     *
      * @param rs 结果集
      * @return 数据模型对象
      */

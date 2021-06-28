@@ -1,6 +1,6 @@
 package com.appleyk.DMA10_桥接模式;
 
-import com.appleyk.DMA10_桥接模式.DM10.database.Driver;
+import com.appleyk.DMA10_桥接模式.DM10.database.IDriver;
 import com.appleyk.DMA10_桥接模式.DM10.database.DriverManager;
 import com.appleyk.DMA10_桥接模式.DM10.database.MySqlDriver;
 import com.appleyk.DMA10_桥接模式.DM10.database.OracleDriver;
@@ -16,9 +16,9 @@ import com.appleyk.DMA10_桥接模式.DM10.paint.shape.Square;
  * <p>桥接模式测试</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 4:34 2018-11-12
- * @version V.0.1.1
  */
 public class BridgeTest {
 
@@ -36,19 +36,19 @@ public class BridgeTest {
     /**
      * 不同驱动连接数据库
      */
-    private static void driverConnect(){
+    private static void driverConnect() {
 
-        DriverManager  driverManager = new DriverManager();
+        DriverManager driverManager = new DriverManager();
         String url = "jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&autoReconnect=true&rewriteBatchedStatements=true";
         String user = "root";
         String pwd = "root";
         // mysql驱动连接数据库
-        Driver mySqlDriver = new MySqlDriver(url,user,pwd);
+        IDriver mySqlDriver = new MySqlDriver(url, user, pwd);
         driverManager.setDriver(mySqlDriver);
         driverManager.connect();
         System.out.println("========= 分割线 =========");
         // oracle驱动连接数据库
-        Driver oracleDriver = new OracleDriver();
+        IDriver oracleDriver = new OracleDriver();
         driverManager.setDriver(oracleDriver);
         driverManager.connect();
         System.out.println("\n========= 分割线 =========\n");
@@ -57,7 +57,7 @@ public class BridgeTest {
     /**
      * 绘制不同颜色的形状
      */
-    private static void drawShape(){
+    private static void drawShape() {
 
         //绘制红色的矩形
         Color red = new Red();

@@ -10,9 +10,9 @@ import com.appleyk.DMB20_状态模式.DM20.猫科B_组合_状态.behavior.CanCli
  * <p>猫 == 就是我们家养的猫</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date created on 11:28 2019/12/6
- * @version V.0.1.1
  */
 public class FelineTestB {
 
@@ -22,13 +22,13 @@ public class FelineTestB {
         lionDisplay();
     }
 
-    private static void catDisplay(){
+    private static void catDisplay() {
         AbstractFeline feline = new Cat();
         feline.climbing();
         feline.swimming();
     }
 
-    private static void lionDisplay(){
+    private static void lionDisplay() {
         AbstractFeline feline = new Lion(new CanClimb());
         feline.climbing();
         feline.swimming();

@@ -10,7 +10,7 @@ import java.util.Date;
  * <p>用户业务模型</p>
  *
  * @author appleyk
- * @version V.0.1.1
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @github https://github.com/kobeyk
  * @date created on 13:27 2021/2/21

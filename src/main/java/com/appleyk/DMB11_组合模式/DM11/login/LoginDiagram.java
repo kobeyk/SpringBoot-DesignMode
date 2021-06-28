@@ -9,32 +9,29 @@ import java.util.List;
  * <p>登录流程图 == 继承抽象树结构</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:32 2018-11-21
- * @version V.0.1.1
  */
 public class LoginDiagram extends AbstractTree {
 
-
-    public LoginDiagram(String name){
+    public LoginDiagram(String name) {
         super(name);
     }
 
     @Override
     public void traverse(TreeNode node) {
-
-        if(node.isRoot()){
-            System.out.println("根："+node.getName()+",父节点："+node.getParent());
-        }else if(node.isLeaf()){
-            System.out.println("叶子："+node.getName()+",父节点："+node.getParent().getName());
-        }else{
-            System.out.println("枝："+node.getName()+",父节点："+node.getParent().getName());
+        if (node.isRoot()) {
+            System.out.println("根：" + node.getName() + ",父节点：" + node.getParent());
+        } else if (node.isLeaf()) {
+            System.out.println("叶子：" + node.getName() + ",父节点：" + node.getParent().getName());
+        } else {
+            System.out.println("枝：" + node.getName() + ",父节点：" + node.getParent().getName());
         }
 
         // 递归遍历
-        List<TreeNode> childrens = node.getChildrens();
-        for (TreeNode cNode : childrens) {
-            traverse(cNode) ;
+        for (TreeNode cNode : node.getChildrens()) {
+            traverse(cNode);
         }
     }
 }

@@ -6,14 +6,14 @@ package com.appleyk.DMA3_单例模式.DM3;
  * @author Appleyk
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:12 2018-11-6
- * @version V.0.1.1
+ * @version v0.1.1
  */
 public class Singleton5 {
 
     // 私有构造器，防止外部new实例
     private Singleton5(){}
 
-    // 加volatile，防止指令冲排序
+    // 加volatile，防止指令重排序
     private static volatile Singleton5 instance = null;
 
     /**
@@ -33,8 +33,7 @@ public class Singleton5 {
     }
 
     public void show(){
-        System.out.println("你好，我是单例模式三！");
+        System.out.println("你好，我是单例模式五！");
     }
-
 
 }

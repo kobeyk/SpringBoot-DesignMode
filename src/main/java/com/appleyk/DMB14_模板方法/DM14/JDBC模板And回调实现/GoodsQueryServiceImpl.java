@@ -7,20 +7,22 @@ import java.sql.Statement;
  * <p>商品查询业务类</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:05 2018-11-21
- * @version V.0.1.1
  */
 public class GoodsQueryServiceImpl {
-    public Object query(String sql) throws SQLException{
-        return  new JdbcTemplate().executeQuery(new GoodsQueryStatementCallBack(sql));
+
+    public Object query(String sql) throws SQLException {
+        return new JdbcTemplate().executeQuery(new GoodsQueryStatementCallBack(sql));
     }
+
 }
 
 /**
  * <p>内部类 == 用户查询数据库操作对象回调类</p>
  */
-class GoodsQueryStatementCallBack implements StatementCallback {
+class GoodsQueryStatementCallBack implements IStatementCallback {
 
     private String sql;
 

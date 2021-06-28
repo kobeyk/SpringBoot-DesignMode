@@ -7,9 +7,9 @@ import java.util.List;
  * <p>树节点</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:23 2018-11-21
- * @version V.0.1.1
  */
 public class TreeNode {
 
@@ -28,9 +28,10 @@ public class TreeNode {
      */
     private List<TreeNode> childrens = new ArrayList<>();
 
-    public TreeNode(){}
+    public TreeNode() {
+    }
 
-    public TreeNode(String name){
+    public TreeNode(String name) {
         this.name = name;
     }
 
@@ -58,13 +59,13 @@ public class TreeNode {
         this.childrens = childrens;
     }
 
-    public void addChildren(TreeNode node){
+    public void addChildren(TreeNode node) {
         // 别忘设置节点的父
         node.setParent(this);
         this.childrens.add(node);
     }
 
-    public TreeNode addChildren(String node){
+    public TreeNode addChildren(String node) {
         TreeNode cNode = new TreeNode(node);
         // 别忘设置节点的父
         cNode.setParent(this);
@@ -72,26 +73,32 @@ public class TreeNode {
         return cNode;
     }
 
-    public void removeChildren(TreeNode node){
+    public void removeChildren(TreeNode node) {
         this.childrens.remove(node);
     }
 
     /**
      * 是否是叶子
      */
-    public boolean isLeaf(){
-         return  !(this.childrens.size()>0) && (this.parent != null);
+    public boolean isLeaf() {
+        return !(this.childrens.size() > 0) && (this.parent != null);
     }
 
     /**
      * 是否有父节点 == 如果没有，就是根节点
+     *
      * @return
      */
-    public boolean hasParent(){return !(this.parent == null);}
+    public boolean hasParent() {
+        return !(this.parent == null);
+    }
 
     /**
      * 根节点没有父节点
+     *
      * @return
      */
-    public boolean isRoot(){return  this.parent == null;}
+    public boolean isRoot() {
+        return this.parent == null;
+    }
 }

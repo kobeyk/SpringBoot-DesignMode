@@ -6,7 +6,7 @@ package com.appleyk.DMA3_单例模式.DM3;
  * @author Appleyk
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:12 2018-11-6
- * @version V.0.1.1
+ * @version v0.1.1
  */
 public class Singleton2 {
 
@@ -19,7 +19,6 @@ public class Singleton2 {
      * 虽然线程安全，但是每次调用getInstance获得实例的时候，都会对当前的对象进行加锁
      * 注意，是每一次，这样的话多线程环境下性能会有所下降，但是我们知道单例模式的实例是全局只创建一次的
      * 因此，这个锁不应该在每次获取实例的时候加锁，而应该加在第一次创建对象上
-     * @return
      */
     public static synchronized Singleton2 getInstance() {
         if (instance == null) {
@@ -31,6 +30,5 @@ public class Singleton2 {
     public void show(){
         System.out.println("你好，我是单例模式二！");
     }
-
 
 }

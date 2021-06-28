@@ -6,7 +6,7 @@ import org.springframework.context.ApplicationEvent;
  * <p>发送邮件事件</p>
  *
  * @author appleyk
- * @version V.0.1.1
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @github https://github.com/kobeyk
  * @date created on 13:37 2021/2/21

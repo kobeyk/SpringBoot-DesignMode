@@ -7,7 +7,7 @@ import org.springframework.context.ApplicationListener;
  * <p>自定义测试事件监听器：通过显示的实现Spring框架中封装的ApplicationListener接口来完成事件监听</p>
  *
  * @author appleyk
- * @version V.0.1.1
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @github https://github.com/kobeyk
  * @date created on 12:22 2021/2/21

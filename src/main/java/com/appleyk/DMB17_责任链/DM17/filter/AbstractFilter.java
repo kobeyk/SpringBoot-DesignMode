@@ -6,11 +6,11 @@ import java.util.HashSet;
  * <p>抽象过滤器</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 2:11 2018-11-6
- * @version V.0.1.1
  */
-public abstract  class AbstractFilter {
+public abstract class AbstractFilter {
 
     /**
      * 根据ids查询
@@ -33,7 +33,7 @@ public abstract  class AbstractFilter {
         this.ids = ids;
     }
 
-    public void addIds(Long id){
+    public void addIds(Long id) {
         this.ids.add(id);
     }
 

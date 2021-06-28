@@ -7,9 +7,9 @@ import java.sql.SQLException;
  * <p>商品数据库操作（模板）实现类</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:05 2018-11-21
- * @version V.0.1.1
  */
 public class GoodsTemplateImpl extends AbstractJdbcTemplate {
 

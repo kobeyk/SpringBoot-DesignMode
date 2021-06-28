@@ -6,11 +6,11 @@ import com.appleyk.DMA10_桥接模式.DM10.paint.color.Color;
  * <p>抽象形状类 -- 聚合与关联Color实现类</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:03 2018-11-19
- * @version V.0.1.1
  */
-public abstract  class AbstractShape {
+public abstract class AbstractShape {
 
     private Color color;
 

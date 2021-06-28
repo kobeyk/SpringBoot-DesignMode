@@ -9,14 +9,14 @@ import java.util.Date;
  * <p>用户Dao层</p>
  *
  * @author appleyk
- * @version V.0.1.1
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @github https://github.com/kobeyk
  * @date created on 13:32 2021/2/21
  */
 @Service
 public class UserDao {
-    public TUser save(TUser user) throws Exception{
+    public TUser save(TUser user) throws Exception {
         user.setUid(System.currentTimeMillis());
         user.setRegisterTime(new Date());
         // 模拟db的insert操作，假设耗时200ms

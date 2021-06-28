@@ -15,19 +15,19 @@ import java.sql.SQLException;
  * <p>模板方法测试</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:05 2018-11-21
- * @version V.0.1.1
  */
 public class TemplateTest {
 
-    public static void main(String[] args)  throws SQLException{
+    public static void main(String[] args) throws SQLException {
         calculate();
         jdbc();
         jdbcCallBack();
     }
 
-    private static void calculate(){
+    private static void calculate() {
 
         System.out.println("====================== 11 + 2 加法公式计算 ");
         AbstractCalculator plus = new Plus();

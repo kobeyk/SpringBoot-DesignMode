@@ -4,31 +4,31 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
- * <p>性别枚举类</p>
+ * <p>作业枚举类</p>
  *
  * @author Appleyk
  * @blob https://blog.csdn.net/appleyk
- * @date Created on 下午 1:16 2018-11-8
- * @version V.0.1.1
+ * @date Created on 下午 1:01 2018-11-8
+ * @version v0.1.1
  */
-public enum SexEnum {
+public enum EWorkType {
 
-    /**
-     * 枚举对象
-     */
-    MALE("男",0),
-    FEMALE("女",1);
-
+    YU_WEN("语文",0),
+    SHU_XUE("数学",1),
+    YING_YU("英语",2),
+    WU_LI("物理",3),
+    HUA_XUE("化学",4),
+    SHENG_WU("生物",5);
 
     private final  String name ;
     private final  Integer value;
 
     /**
      * 枚举构造器
-     * @param name 性别名称
-     * @param value 性别值
+     * @param name 作业类型名称
+     * @param value 作业类型值
      */
-    SexEnum(String name,Integer value){
+    EWorkType(String name, Integer value){
         this.name = name;
         this.value = value;
     }
@@ -39,10 +39,10 @@ public enum SexEnum {
      * @param name 类型名称
      * @return
      */
-    public static SexEnum getEnum(String name){
-        for(SexEnum sexEnum : SexEnum.values()){
-            if(name.equals(sexEnum.getName())){
-                return  sexEnum;
+    public static EWorkType getEnum(String name){
+        for(EWorkType typeEnum : EWorkType.values()){
+            if(name.equals(typeEnum.getName())){
+                return  typeEnum;
             }
         }
         return  null;
@@ -54,10 +54,10 @@ public enum SexEnum {
      * @return
      */
     @JsonCreator
-    public static SexEnum getEnum(Integer value){
-        for(SexEnum sexEnum : SexEnum.values()){
-            if(value.equals(sexEnum.getValue())){
-                return  sexEnum;
+    public static EWorkType getEnum(Integer value){
+        for(EWorkType typeEnum : EWorkType.values()){
+            if(value.equals(typeEnum.getValue())){
+                return  typeEnum;
             }
         }
         return  null;

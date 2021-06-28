@@ -10,45 +10,44 @@ import java.util.Date;
  * <p>小学生的家庭作业</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 12:59 2018-11-8
- * @version V.0.1.1
  */
-public class HomeWork implements  Cloneable,Serializable {
+public class HomeWork implements Cloneable, Serializable {
 
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-	/**
+    /**
      * 作业类型
      */
-    private WorkTypeEnum type = WorkTypeEnum.YUWEN;
+    private EWorkType type = EWorkType.YU_WEN;
 
     /**
      * 完成时间
      */
     @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
-    private Date finishTime ;
+    private Date finishTime;
 
     /**
      * 作业页码数【作业量】
      */
     private Integer pages = 0;
 
-
     /**
      * 完成者
      */
     private PupilStudent pupilStudent;
 
-    public HomeWork(){
+    public HomeWork() {
 
     }
 
-    public WorkTypeEnum getType() {
+    public EWorkType getType() {
         return type;
     }
 
-    public void setType(WorkTypeEnum type) {
+    public void setType(EWorkType type) {
         this.type = type;
     }
 
@@ -78,7 +77,8 @@ public class HomeWork implements  Cloneable,Serializable {
 
     /**
      * 对象浅拷贝  == 对象中按值类型传递部分均能完美拷贝走，但是按引用类型传递部分则拷贝不走
-     * @return
+     *
+     * @return HomeWork
      * @throws CloneNotSupportedException
      */
     @Override
@@ -89,13 +89,14 @@ public class HomeWork implements  Cloneable,Serializable {
     /**
      * 深度拷贝 == 不管你对象中是值类型部分，还是引用类型部分，我全部拿走
      * 对象字节流的序列与反序列化 ==> 对象完全、深度、彻彻底底的Copy！！！
-     * @return
+     *
+     * @return HomeWork
      */
-    public HomeWork deepClone(){
+    public HomeWork deepClone() {
 
         // Anything 都是可以用字节流进行表示，记住是任何！
         HomeWork homeWork = null;
-        try{
+        try {
 
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
             ObjectOutputStream oos = new ObjectOutputStream(baos);
@@ -112,18 +113,18 @@ public class HomeWork implements  Cloneable,Serializable {
             // 下面将反序列化字节流 == 重新开辟一块空间存放反序列化后的对象
             homeWork = (HomeWork) ois.readObject();
 
-        }catch (Exception e){
-            System.out.println(e.getClass()+":"+e.getMessage());
+        } catch (Exception e) {
+            System.out.println(e.getClass() + ":" + e.getMessage());
         }
-        return  homeWork;
+        return homeWork;
     }
 
     @Override
     public String toString() {
-        return  String.format("类型：%s,页数：%s,完成时间：%s," +
-                "完成者：%s,学号：%d,年级：%d,年龄:%d,性别：%s",this.type.getName()
-                ,this.pages,DateUtils.dateTostring(this.finishTime),this.pupilStudent.getName(),
-                this.pupilStudent.getsNo(),this.pupilStudent.getsClass(),
-                this.pupilStudent.getAge(),this.pupilStudent.getSex().getName());
+        return String.format("类型：%s,页数：%s,完成时间：%s," +
+                        "完成者：%s,学号：%d,年级：%d,年龄:%d,性别：%s", this.type.getName()
+                , this.pages, DateUtils.date2Str(this.finishTime), this.pupilStudent.getName(),
+                this.pupilStudent.getsNo(), this.pupilStudent.getsClass(),
+                this.pupilStudent.getAge(), this.pupilStudent.getSex().getName());
     }
 }

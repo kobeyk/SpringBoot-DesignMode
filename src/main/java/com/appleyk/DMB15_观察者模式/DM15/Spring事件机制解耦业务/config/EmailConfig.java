@@ -13,7 +13,7 @@ import java.util.concurrent.ThreadPoolExecutor;
  * <p>Spring Bean 配置</p>
  *
  * @author appleyk
- * @version V.0.1.1
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @github https://github.com/kobeyk
  * @date created on 12:19 2021/2/21
@@ -25,7 +25,7 @@ public class EmailConfig {
 
     // 配置线程池（事件的异步执行会用到）
     @Bean
-    public ThreadPoolTaskExecutor taskExecutor(){
+    public ThreadPoolTaskExecutor taskExecutor() {
         ThreadPoolTaskExecutor taskExecutor = new ThreadPoolTaskExecutor();
         taskExecutor.setThreadNamePrefix("task-");
         /**任务拒绝执行策略（如果超过了最大线程数，就会触发拒绝执行策略，一共四种，默认抛异常）*/
@@ -40,4 +40,5 @@ public class EmailConfig {
         taskExecutor.initialize();
         return taskExecutor;
     }
+
 }

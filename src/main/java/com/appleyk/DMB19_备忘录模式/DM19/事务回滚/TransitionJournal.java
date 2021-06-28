@@ -7,25 +7,25 @@ import java.util.List;
  * <p>事务日志类</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:05 2018-11-21
- * @version V.0.1.1
  */
 public class TransitionJournal {
 
     /**
      * 日志序号
      */
-    private Integer logNum ;
+    private Integer logNum;
 
     /**
      * 假设数据是存进数据库的
      */
     private List<Integer> data = new ArrayList<>();
 
-    public TransitionJournal(Integer logNum , List<Integer> data) {
+    public TransitionJournal(Integer logNum, List<Integer> data) {
         this.logNum = logNum;
-        if(data != null && data.size() > 0){
+        if (data != null && data.size() > 0) {
             this.data.addAll(data);
         }
     }

@@ -12,13 +12,13 @@ import com.appleyk.DMA9_外观模式.DM9.ModuleB.SubSystemD;
  * <p>外观模式测试</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 上午 8:30 2018-11-12
- * @version V.0.1.1
  */
 public class FacadeTest {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
 
         /**
          * 不使用外观模式，直接使用智能人工系统的模块A和模块B的功能
@@ -52,7 +52,7 @@ public class FacadeTest {
     /**
      * 不使用外观模式，直接使用模块A的功能
      */
-    private static void useModuleA(){
+    private static void useModuleA() {
         partition("直接使用模块A中的功能");
         SubSystemA subSystemA = new SubSystemA();
         SubSystemB subSystemB = new SubSystemB();
@@ -63,7 +63,7 @@ public class FacadeTest {
     /**
      * 不使用外观模式，直接使用模块B的功能
      */
-    private static void useModuleB(){
+    private static void useModuleB() {
         partition("直接使用模块B中的功能");
         SubSystemC subSystemC = new SubSystemC();
         SubSystemD subSystemD = new SubSystemD();
@@ -74,7 +74,7 @@ public class FacadeTest {
     /**
      * 使用外观模式A，对模块A中的功能进行"屏蔽"
      */
-    private static void useModuleAByFacadeA(){
+    private static void useModuleAByFacadeA() {
         partition("使用外观模式A");
         FacadeA facadeA = new FacadeA();
         facadeA.initialize();
@@ -83,7 +83,7 @@ public class FacadeTest {
     /**
      * 使用外观模式B，对模块B中的功能进行"屏蔽"
      */
-    private static void useModuleAByFacadeB(){
+    private static void useModuleAByFacadeB() {
         partition("使用外观模式A");
         FacadeB facadeB = new FacadeB();
         facadeB.work();
@@ -92,14 +92,13 @@ public class FacadeTest {
     /**
      * 使用外观模式AB，对外观模式A和B再进行一次"屏蔽"
      */
-    private static void useSystemByFacadeAB(){
+    private static void useSystemByFacadeAB() {
         partition("使用外观模式AB");
         FacadeAB facadeAB = new FacadeAB();
         facadeAB.startSystem();
     }
 
-
-    private static  void partition(String note){
-        System.out.println("============== 分割线【"+note+"】 ==============");
+    private static void partition(String note) {
+        System.out.println("============== 分割线【" + note + "】 ==============");
     }
 }

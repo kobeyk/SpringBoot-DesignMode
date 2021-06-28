@@ -10,7 +10,7 @@ import com.appleyk.DMA5_建造者模式.DM5.CakeSeller;
  * @author Appleyk
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 下午 1:32 2018-11-9
- * @version V.0.1.1
+ * @version v0.1.1
  */
 public class BuilderTest {
 
@@ -26,22 +26,16 @@ public class BuilderTest {
      */
     public static void main(String[] args) {
 
-        // 先指定一个蛋糕师傅  == 李师傅
+        /**先指定一个蛋糕师傅  == 李师傅*/
         CakeMaker cakeMaker = new CakeMaker("李师傅");
 
-        /**
-         * 指定蛋糕销售员
-         */
+        /**指定蛋糕销售员*/
         CakeSeller cakeSeller = new CakeSeller();
 
-        /**
-         * 销售员卖个客户一个蛋糕 == 注意，这个蛋糕的制作工程已经被隐藏了
-         */
+        /**销售员卖个客户一个蛋糕 == 注意，这个蛋糕的制作工程已经被隐藏了*/
         Cake cake = cakeSeller.sell(cakeMaker);
 
-        /**
-         * 这一句其实没必要显示，这里显示是为了说明，蛋糕不是平白无故的创造出来的
-         */
+        /**这一句其实没必要显示，这里显示是为了说明，蛋糕不是平白无故的创造出来的*/
         cake.show();
 
         /**
@@ -53,7 +47,6 @@ public class BuilderTest {
          * 好处：建造代码与表示代码分离，隐藏了该产品是如何组装的，
          *       若需要改变一个产品的内部表示，只需要再定义一个具体的建造者就可以了 == 这个就非常很了
          */
-
     }
 
 }

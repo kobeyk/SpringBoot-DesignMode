@@ -16,20 +16,20 @@ import com.appleyk.DMB17_责任链.Handler.MouseHandler;
  * <p>使用了任务链的service业务层，实现根据过滤器查询电脑信息</p>
  *
  * @author Appleyk
+ * @version v0.1.1
  * @blob https://blog.csdn.net/appleyk
  * @date Created on 上午 11:41 2018-11-7
- * @version V.0.1.1
  */
 @Service
 public class ComputerQueryService2 {
 
-    public List<Computer> query(ComputerFilter filter){
+    public List<Computer> query(ComputerFilter filter) {
 
         // 逐个创建任务
         ComputerHandler computerHandler = new ComputerHandler();
-        MonitorHandler  monitorHandler  = new MonitorHandler() ;
-        KeyBordHandler  keyBordHandler  = new KeyBordHandler() ;
-        MouseHandler    mouseHandler    = new MouseHandler();
+        MonitorHandler monitorHandler = new MonitorHandler();
+        KeyBordHandler keyBordHandler = new KeyBordHandler();
+        MouseHandler mouseHandler = new MouseHandler();
 
         // 设置任务之间的关系 == 设置任务之间的链条
         computerHandler.setNextHandler(monitorHandler);
